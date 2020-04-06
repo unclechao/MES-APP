@@ -7,34 +7,9 @@
 
 <script>
 	export default {
-		name: "mes",
 		data() {
 			return {
-				elements: [{
-						title: '工单',
-						name: 'workOrder',
-						color: 'blue',
-						cuIcon: 'form'
-					},
-					{
-						title: '设备',
-						name: 'device',
-						color: 'blue',
-						cuIcon: 'repair'
-					},
-					{
-						title: '消息',
-						name: 'message',
-						color: 'blue',
-						cuIcon: 'message'
-					},
-					{
-						title: '我的 ',
-						name: 'my',
-						color: 'blue',
-						cuIcon: 'my'
-					},
-				],
+
 			};
 		},
 	}

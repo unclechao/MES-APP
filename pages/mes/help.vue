@@ -1,13 +1,11 @@
 <template>
 	<view>
-		工单页面
-
+		帮助页面
 	</view>
 </template>
 
 <script>
 	export default {
-
 		data() {
 			return {
 

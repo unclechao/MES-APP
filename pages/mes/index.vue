@@ -19,7 +19,7 @@
 		</scroll-view>
 		<workOrder v-show="PageCur=='workOrder'"></workOrder>
 		<device v-if="PageCur=='device'"></device>
-		<message v-if="PageCur=='message'"></message>
+		<help v-if="PageCur=='help'"></help>
 		<my v-if="PageCur=='my'"></my>
 		<!-- 页脚 -->
 		<view class="cu-bar tabbar  bg-black shadow foot">
@@ -35,9 +35,9 @@
 				<view class="cuIcon-repair"></view>
 				设备
 			</view>
-			<view :class="PageCur=='message' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="message">
-				<view class="cuIcon-message"></view>
-				消息
+			<view :class="PageCur=='help' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="help">
+				<view class="cuIcon-question"></view>
+				帮助
 			</view>
 			<view :class="PageCur=='my' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="my">
 				<view class="cuIcon-my"></view>
@@ -49,7 +49,6 @@
 
 <script>
 	export default {
-		name: "mes",
 		data() {
 			return {
 				PageCur: 'index',
@@ -66,10 +65,10 @@
 						cuIcon: 'repair'
 					},
 					{
-						title: '消息',
-						name: 'message',
+						title: '帮助',
+						name: 'help',
 						color: 'blue',
-						cuIcon: 'message'
+						cuIcon: 'question'
 					},
 					{
 						title: '我的 ',

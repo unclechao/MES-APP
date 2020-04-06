@@ -10,7 +10,7 @@
 			"path": "pages/mes/device",
 			"style": {}
 		}, {
-			"path": "pages/mes/message",
+			"path": "pages/mes/help",
 			"style": {}
 		}, {
 			"path": "pages/mes/my",
