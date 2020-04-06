@@ -8,7 +8,7 @@
 		<scroll-view v-show="PageCur=='index'" scroll-y class="page">
 			<image src="/static/rochiev.png" mode="widthFix" style="padding:20upx" class="response"></image>
 			<view class="nav-list">
-				<view class="nav-li" :class="'bg-'+item.color" :style="[{animation: 'show ' + ((index+1)*0.2+1) + 's 1'}]" v-for="(item,index) in elements"
+				<view @click="ComponentChange(item.name)" class="nav-li" :class="'bg-'+item.color" :style="[{animation: 'show ' + ((index+1)*0.2+1) + 's 1'}]" v-for="(item,index) in elements"
 				 :key="index">
 					<view class="nav-title">{{item.title}}</view>
 					<view class="nav-name">{{item.name}}</view>
@@ -83,6 +83,9 @@
 		methods: {
 			NavChange: function(e) {
 				this.PageCur = e.currentTarget.dataset.cur
+			},
+			ComponentChange:function(pageName){
+				this.PageCur =pageName			
 			}
 		}
 	}
