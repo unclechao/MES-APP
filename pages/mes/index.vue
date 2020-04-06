@@ -8,8 +8,8 @@
 		<scroll-view v-show="PageCur=='index'" scroll-y class="page">
 			<image src="/static/rochiev.png" mode="widthFix" style="padding:20upx" class="response"></image>
 			<view class="nav-list">
-				<view @click="ComponentChange(item.name)" class="nav-li" :class="'bg-'+item.color" :style="[{animation: 'show ' + ((index+1)*0.2+1) + 's 1'}]" v-for="(item,index) in elements"
-				 :key="index">
+				<view @click="ComponentChange(item.name)" class="nav-li" :class="'bg-'+item.color" :style="[{animation: 'show ' + ((index+1)*0.2+1) + 's 1'}]"
+				 v-for="(item,index) in elements" :key="index">
 					<view class="nav-title">{{item.title}}</view>
 					<view class="nav-name">{{item.name}}</view>
 					<text :class="'cuIcon-' + item.cuIcon"></text>
@@ -23,23 +23,23 @@
 		<my v-if="PageCur=='my'"></my>
 		<!-- 页脚 -->
 		<view class="cu-bar tabbar  bg-black shadow foot">
-			<view class="action text-blue" @click="NavChange" data-cur="index">
+			<view :class="PageCur=='index' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="index">
 				<view class="cuIcon-home"></view>
 				首页
 			</view>
-			<view class="action text-gray" @click="NavChange" data-cur="workOrder">
+			<view :class="PageCur=='workOrder' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="workOrder">
 				<view class="cuIcon-form"></view>
 				工单
 			</view>
-			<view class="action text-gray" @click="NavChange" data-cur="device">
+			<view :class="PageCur=='device' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="device">
 				<view class="cuIcon-repair"></view>
 				设备
 			</view>
-			<view class="action text-gray" @click="NavChange" data-cur="message">
+			<view :class="PageCur=='message' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="message">
 				<view class="cuIcon-message"></view>
 				消息
 			</view>
-			<view class="action text-gray" @click="NavChange" data-cur="my">
+			<view :class="PageCur=='my' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="my">
 				<view class="cuIcon-my"></view>
 				我的
 			</view>
@@ -84,8 +84,8 @@
 			NavChange: function(e) {
 				this.PageCur = e.currentTarget.dataset.cur
 			},
-			ComponentChange:function(pageName){
-				this.PageCur =pageName			
+			ComponentChange: function(pageName) {
+				this.PageCur = pageName
 			}
 		}
 	}
@@ -95,9 +95,11 @@
 	.page {
 		height: 100vh;
 	}
+
 	.box {
 		margin: 20upx 0;
 	}
+
 	.box view.cu-bar {
 		margin-top: 20upx;
 	}
