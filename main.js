@@ -4,16 +4,16 @@ import App from './App'
 import cuCustom from './colorui/components/cu-custom.vue'
 Vue.component('cu-custom', cuCustom)
 
-import device from './pages/mes/device.vue'
+import device from './pages/mes/device/index.vue'
 Vue.component('device', device)
 
-import help from './pages/mes/help.vue'
+import help from './pages/mes/help/index.vue'
 Vue.component('help', help)
 
-import my from './pages/mes/my.vue'
+import my from './pages/mes/my/index.vue'
 Vue.component('my', my)
 
-import workOrder from './pages/mes/workOrder.vue'
+import workOrder from './pages/mes/workOrder/index.vue'
 Vue.component('workOrder', workOrder)
 
 Vue.config.productionTip = false
