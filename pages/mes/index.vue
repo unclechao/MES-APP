@@ -25,23 +25,24 @@
 		<view class="cu-bar tabbar  bg-black shadow foot">
 			<view :class="PageCur=='index' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="index">
 				<view class="cuIcon-home"></view>
-				首页
+				<text>首页</text>
 			</view>
 			<view :class="PageCur=='workOrder' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="workOrder">
 				<view class="cuIcon-form"></view>
-				工单
+				<text>工单</text>
 			</view>
 			<view :class="PageCur=='device' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="device">
 				<view class="cuIcon-repair"></view>
-				设备
+				<text>设备</text>
 			</view>
 			<view :class="PageCur=='help' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="help">
 				<view class="cuIcon-question"></view>
-				帮助
+				<text>帮助</text>
 			</view>
 			<view :class="PageCur=='my' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="my">
 				<view class="cuIcon-my"></view>
-				我的
+				<text>我的</text>
+				
 			</view>
 		</view>
 	</view>
