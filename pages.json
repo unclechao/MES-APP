@@ -1,22 +1,23 @@
 {
-	"pages": [
-		{
-			"path": "pages/mes/index",
-			"style": {}
-		},{
-			"path": "pages/mes/workOrder/index",
-			"style": {}
-		},{
-			"path": "pages/mes/device/index",
-			"style": {}
-		}, {
-			"path": "pages/mes/help/index",
-			"style": {}
-		}, {
-			"path": "pages/mes/my/index",
-			"style": {}
-		}
-	],
+	"pages": [{
+		"path": "pages/mes/index",
+		"style": {}
+	}, {
+		"path": "pages/mes/workOrder/index",
+		"style": {}
+	}, {
+		"path": "pages/mes/device/index",
+		"style": {}
+	}, {
+		"path": "pages/mes/help/index",
+		"style": {}
+	}, {
+		"path": "pages/mes/my/index",
+		"style": {}
+	}, {
+		"path": "pages/mes/help/about",
+		"style": {}
+	}],
 	"globalStyle": {
 		"navigationBarBackgroundColor": "#0093dd",
 		"navigationBarTitleText": "MES 管理系统",

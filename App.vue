@@ -1,6 +1,9 @@
 <script>
 	import Vue from 'vue'
 	export default {
+		globalData: {
+			global_title: 'MES'
+		},
 		onLaunch: function() {
 			uni.getSystemInfo({
 				success: function(e) {

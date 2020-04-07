@@ -17,7 +17,7 @@
 			</view>
 			<view class="cu-tabbar-height"></view>
 		</scroll-view>
-		<workOrder v-show="PageCur=='workOrder'"></workOrder>
+		<workOrder v-if="PageCur=='workOrder'"></workOrder>
 		<device v-if="PageCur=='device'"></device>
 		<help v-if="PageCur=='help'"></help>
 		<my v-if="PageCur=='my'"></my>
@@ -42,9 +42,9 @@
 			<view :class="PageCur=='my' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="my">
 				<view class="cuIcon-my"></view>
 				<text>我的</text>
-				
 			</view>
 		</view>
+
 	</view>
 </template>
 
@@ -109,17 +109,3 @@
 		}
 	}
 </script>
-
-<style>
-	.page {
-		height: 100vh;
-	}
-
-	.box {
-		margin: 20upx 0;
-	}
-
-	.box view.cu-bar {
-		margin-top: 20upx;
-	}
-</style>
