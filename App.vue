@@ -2,7 +2,7 @@
 	import Vue from 'vue'
 	export default {
 		globalData: {
-			global_title: 'MES'
+			global_login: 'false'
 		},
 		onLaunch: function() {
 			uni.getSystemInfo({
