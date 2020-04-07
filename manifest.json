@@ -1,6 +1,6 @@
 {
     "name" : "MES 管理系统",
-    "appid" : "__UNI__1770C",
+    "appid" : "__UNI__9FC2769",
     "description" : "",
     "versionName" : "MES",
     "versionCode" : 1,
@@ -41,6 +41,9 @@
             "ios" : {},
             /* ios打包配置 */
             "sdkConfigs" : {}
+        },
+        "uniStatistics" : {
+            "enable" : false
         }
     },
     /* SDK配置 */
@@ -52,10 +55,39 @@
         "setting" : {
             "urlCheck" : false,
             "es6" : true
+        },
+        "uniStatistics" : {
+            "enable" : false
         }
     },
     "h5" : {
         "title" : "MES 管理系统",
-        "domain" : "demo.color-ui.com"
+        "domain" : "127.0.0.1",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "mp-alipay" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-baidu" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-qq" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
     }
 }
