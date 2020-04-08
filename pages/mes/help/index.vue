@@ -20,7 +20,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="cu-list menu sm-border margin-top">
+		<view class="cu-list menu sm-border margin-top" @click="NavChange('about')">
 			<view class="cu-item arrow">
 				<view class="content">
 					<text class="cuIcon-info text-blue"></text>
@@ -28,5 +28,24 @@
 				</view>
 			</view>
 		</view>
+
 	</view>
 </template>
+<script>
+	export default {
+		methods: {
+			NavChange: function(target) {
+				switch (target) {
+					case "about":
+						uni.navigateTo({
+							url: '/pages/mes/help/about'
+						});
+						break;
+					default:
+						this.$root.title = '帮助'
+						break;
+				}
+			},
+		}
+	}
+</script>

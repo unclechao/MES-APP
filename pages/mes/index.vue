@@ -17,10 +17,10 @@
 			</view>
 			<view class="cu-tabbar-height"></view>
 		</scroll-view>
-		<workOrder v-if="PageCur=='workOrder'"></workOrder>
-		<device v-if="PageCur=='device'"></device>
-		<help v-if="PageCur=='help'"></help>
-		<my v-if="PageCur=='my'"></my>
+		<workOrder v-show="PageCur=='workOrder'"></workOrder>
+		<device v-show="PageCur=='device'"></device>
+		<help v-show="PageCur=='help'"></help>
+		<my v-show="PageCur=='my'"></my>
 		<!-- 页脚 -->
 		<view class="cu-bar tabbar  bg-black shadow foot">
 			<view :class="PageCur=='index' ? 'action text-blue' : 'action text-gray'" @click="NavChange" data-cur="index">

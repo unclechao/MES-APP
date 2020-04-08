@@ -16,6 +16,9 @@ Vue.component('my', my)
 import workOrder from './pages/mes/workOrder/index.vue'
 Vue.component('workOrder', workOrder)
 
+import about from './pages/mes/help/about.vue'
+Vue.component('about', about)
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'
