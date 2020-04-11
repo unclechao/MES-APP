@@ -17,6 +17,24 @@
 					// #endif
 				}
 			})
+
+			// 访问一次所有二级页面，解决初次访问时闪屏问题，提升用户体验
+			Promise.all([new Promise((resolve) => {
+				uni.navigateTo({
+					url: '/pages/mes/help/about'
+				});
+				resolve()
+			}), new Promise((resolve) => {
+				uni.navigateTo({
+					url: '/pages/mes/help/instructionOnline'
+				});
+				resolve()
+			})]).then(() => {
+				uni.navigateTo({
+					url: '/'
+				});
+			})
+
 		},
 		onShow: function() {
 			// console.log('App Show')

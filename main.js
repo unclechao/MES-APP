@@ -19,6 +19,9 @@ Vue.component('workOrder', workOrder)
 import about from './pages/mes/help/about.vue'
 Vue.component('about', about)
 
+import instructionOnline from './pages/mes/help/instructionOnline.vue'
+Vue.component('instructionOnline', instructionOnline)
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'
