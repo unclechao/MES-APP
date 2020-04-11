@@ -17,6 +17,9 @@
 	}, {
 		"path": "pages/mes/help/about",
 		"style": {}
+	}, {
+		"path": "pages/mes/help/instructionOnline",
+		"style": {}
 	}],
 	"globalStyle": {
 		"navigationBarBackgroundColor": "#0093dd",

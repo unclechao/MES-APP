@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="cu-list menu sm-border">
+		<view class="cu-list menu sm-border" @click="NavChange('instructionOnline')">
 			<view class="cu-item arrow">
 				<view class="content">
 					<text class="cuIcon-read text-blue"></text>
@@ -39,6 +39,11 @@
 					case "about":
 						uni.navigateTo({
 							url: '/pages/mes/help/about'
+						});
+						break;
+					case "instructionOnline":
+						uni.navigateTo({
+							url: '/pages/mes/help/instructionOnline'
 						});
 						break;
 					default:
