@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view>		
 		<view class="cu-list menu sm-border" @click="NavChange('createOrder')">
 			<view class="cu-item arrow">
 				<view class="content">
