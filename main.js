@@ -16,6 +16,15 @@ Vue.component('my', my)
 import workOrder from './pages/mes/workOrder/index.vue'
 Vue.component('workOrder', workOrder)
 
+import createOrder from './pages/mes/workOrder/createOrder.vue'
+Vue.component('createOrder', createOrder)
+
+import orderList from './pages/mes/workOrder/orderList.vue'
+Vue.component('orderList', orderList)
+
+import orderSchedule from './pages/mes/workOrder/orderSchedule.vue'
+Vue.component('orderSchedule', orderSchedule)
+
 import about from './pages/mes/help/about.vue'
 Vue.component('about', about)
 

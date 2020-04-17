@@ -39,6 +39,21 @@
 					url: '/pages/mes/help/instructionOnline'
 				});
 				resolve()
+			}), new Promise((resolve) => {
+				uni.navigateTo({
+					url: '/pages/mes/workOrder/createOrder'
+				});
+				resolve()
+			}), new Promise((resolve) => {
+				uni.navigateTo({
+					url: '/pages/mes/workOrder/orderList'
+				});
+				resolve()
+			}), new Promise((resolve) => {
+				uni.navigateTo({
+					url: '/pages/mes/workOrder/orderSchedule'
+				});
+				resolve()
 			})]).then(() => {
 				uni.navigateTo({
 					url: '/'

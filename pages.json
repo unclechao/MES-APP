@@ -28,6 +28,18 @@
             "path" : "pages/mes/help/termExplain",
             "style" : {}
         }
+        ,{
+            "path" : "pages/mes/workOrder/createOrder",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/mes/workOrder/orderList",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/mes/workOrder/orderSchedule",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarBackgroundColor": "#0093dd",
