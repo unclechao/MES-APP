@@ -48,7 +48,7 @@
 						<view class="title">数量<text class="requiredField">﹡</text></view>
 						<input placeholder="" name="input" type="number" style="text-align:right"></input>
 					</view>
-					
+
 
 				</view>
 				<!-- 吹扫工单 -->
@@ -86,6 +86,8 @@
 				emptyBarrelSourceType: ['桶库供桶', '外部供桶'],
 				productTypeIndex: -1,
 				productType: ['dynamic1', 'dynamic2'],
+				fillingWayTypeIndex: 0,
+				fillingWayType: ['净重灌装', '毛重灌装'],
 			};
 		},
 		methods: {
