@@ -26,6 +26,16 @@
 				resolve()
 			}), new Promise((resolve) => {
 				uni.navigateTo({
+					url: '/pages/mes/help/guide'
+				});
+				resolve()
+			}), new Promise((resolve) => {
+				uni.navigateTo({
+					url: '/pages/mes/help/termExplain'
+				});
+				resolve()
+			}), new Promise((resolve) => {
+				uni.navigateTo({
 					url: '/pages/mes/help/instructionOnline'
 				});
 				resolve()

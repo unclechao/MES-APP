@@ -20,7 +20,15 @@
 	}, {
 		"path": "pages/mes/help/instructionOnline",
 		"style": {}
-	}],
+	}    ,{
+            "path" : "pages/mes/help/guide",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/mes/help/termExplain",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarBackgroundColor": "#0093dd",
 		"navigationBarTitleText": "MES 管理系统",

@@ -22,6 +22,12 @@ Vue.component('about', about)
 import instructionOnline from './pages/mes/help/instructionOnline.vue'
 Vue.component('instructionOnline', instructionOnline)
 
+import guide from './pages/mes/help/guide.vue'
+Vue.component('guide', guide)
+
+import termExplain from './pages/mes/help/termExplain.vue'
+Vue.component('termExplain', termExplain)
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'
