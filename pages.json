@@ -20,32 +20,25 @@
 	}, {
 		"path": "pages/mes/help/instructionOnline",
 		"style": {}
-	}    ,{
-            "path" : "pages/mes/help/guide",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/mes/help/termExplain",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/mes/workOrder/createOrder",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/mes/workOrder/orderList",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/mes/workOrder/orderSchedule",
-            "style" : {}
-        }
-    ],
+	}, {
+		"path": "pages/mes/help/guide",
+		"style": {}
+	}, {
+		"path": "pages/mes/help/termExplain",
+		"style": {}
+	}, {
+		"path": "pages/mes/workOrder/createOrder",
+		"style": {}
+	}, {
+		"path": "pages/mes/workOrder/orderList",
+		"style": {}
+	}, {
+		"path": "pages/mes/workOrder/orderSchedule",
+		"style": {}
+	}],
 	"globalStyle": {
-		"navigationBarBackgroundColor": "#0093dd",
 		"navigationBarTitleText": "MES 管理系统",
-		"navigationStyle": "custom",
-		"navigationBarTextStyle": "white"
+		"navigationStyle": "custom"
 	},
 	"usingComponts": true,
 	"condition": { //模式配置，仅开发期间生效
@@ -56,5 +49,4 @@
 			"query": "" //启动参数
 		}]
 	}
-
 }
