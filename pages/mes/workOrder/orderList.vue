@@ -6,22 +6,27 @@
 		<view class="cu-list menu-avatar">
 			<view class="cu-item" :class="modalName=='move-box-'+ index?'move-cur':''" v-for="(item,index) in orderList" :key="index"
 			 @touchstart="ListTouchStart" @touchmove="ListTouchMove" @touchend="ListTouchEnd" :data-target="'move-box-' + index">
-				<view class="cu-avatar round bg-green"></view>
+				<view class="cu-avatar bg-green lg round" style="font-size: 8pt;">{{item.Status}}</view>
 				<view class="content">
-					<view >item.SN</view>
+					<view>{{item.SN}}</view>
 					<view class="text-gray text-sm">
-						<text class="margin-right-xs"></text> item.Status
+						<text class="margin-right-xs"></text> {{item.Product}}
 					</view>
 				</view>
-				<view class="action" style="width: 60px;">
-					<view class="text-grey text-xs">22:20</view>
-					<view class="cu-tag round bg-grey sm">12 / 140</view>
+				<view class="action" style="width: 90px;">
+					<view class="text-grey text-sm">{{item.Type}}</view>
+					<view class="cu-tag round bg-grey">{{item.CompletedCount}} / {{item.Target}} </view>
 				</view>
-				<view class="move">
+				<view class="move" v-if="item.Status=='队列等待'">
 					<view class="bg-blue">下发</view>
-					<!-- <view class="bg-blue">执行</view> -->
-					<!-- <view class="bg-blue">停止</view> -->
-					<!-- <view class="bg-blue">继续</view> -->
+					<view class="bg-red">结束</view>
+				</view>
+				<view class="move" v-if="item.Status=='执行中'">
+					<view class="bg-blue">停止</view>
+					<view class="bg-red">结束</view>
+				</view>
+				<view class="move" v-if="item.Status=='停止'">>
+					<view class="bg-blue">继续</view>
 					<view class="bg-red">结束</view>
 				</view>
 			</view>
@@ -39,10 +44,20 @@
 				listTouchDirection: null,
 				orderList: [{
 					SN: '20201010123456123',
-					Status: '队列等待'
+					Type: '灌装',
+					Status: '队列等待',
+					Target: '260',
+					CompletedCount: '125',
+					Product: '水',
+					CreateTime: '2019-11-12 23:31:23'
 				}, {
-					SN: '20200228123456123',
-					Status: '执行中'
+					SN: '20200221132334398',
+					Type: '灌装',
+					Status: '执行中',
+					Target: '480',
+					CompletedCount: '56',
+					Product: '苯胺',
+					CreateTime: '2020-5-4 15:11:09'
 				}]
 			};
 		},
